@@ -1,4 +1,5 @@
 export * from './Button';
+export * from './Clicker';
 export * from './Command';
 export * from './Dropdown';
 export * from './Image';

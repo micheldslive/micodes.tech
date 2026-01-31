@@ -1,22 +1,12 @@
 {
   "header": {
-    "language": {
-      "options": {
-        "en": {
-          "value": "en",
-          "label": "English"
-        },
-        "pt": {
-          "value": "pt",
-          "label": "Portuguese"
-        }
-      },
-      "title": "Change language"
-    },
     "theme": {
       "label": "Change theme",
       "light": "Light",
       "dark": "Dark"
+    },
+    "command": {
+      "label": "Open Command"
     }
   },
   "intro": {
