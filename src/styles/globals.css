@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+@import './foundations/fonts.css';
+@import './foundations/breakpoints.css';
+@import './foundations/colors.css';
+@import './foundations/animations.css';
+@import './foundations/utilities.css';
+@plugin 'tailwindcss-animate';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: var(--color-slate-800);
+  --foreground: var(--color-slate-50);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color-slate-100);
+    --foreground: var(--color-slate-500);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}

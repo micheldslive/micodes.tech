@@ -1,0 +1,24 @@
+# Node
+node_modules
+
+# Build Outputs
+/.tanstack
+/.turbo
+/.next
+/out
+/build
+/dist
+
+# Lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Debug 
+*.log
+
+# Typescript
+*.tsbuildinfo
+
+# Tanstack Router
+**/routeTree.gen.ts

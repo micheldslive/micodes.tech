@@ -1,0 +1,113 @@
+/* THEME INLINE --> Use theme inline when defining tokens that reference other tokens, such as variables or animations. Reference: https://tailwindcss.com/docs/theme#referencing-other-variables */
+@theme inline {
+  /* ANIMATIONS */
+  --animate-noise: grain 7s steps(10) infinite;
+  --animate-atom: atom 300ms linear 1;
+  --animate-division: division 300ms linear 1;
+  --animate-ball: ball 2.5s 3s linear infinite;
+  --animate-skeleton-glow: skeleton-glow 0.75s linear infinite;
+
+  /* KEYFRAMES */
+  @keyframes grain {
+    0%,
+    to {
+      transform: translate(0);
+    }
+
+    10% {
+      transform: translate(-5%, -10%);
+    }
+
+    20% {
+      transform: translate(-15%, 5%);
+    }
+
+    30% {
+      transform: translate(7%, -25%);
+    }
+
+    40% {
+      transform: translate(-5%, 25%);
+    }
+
+    50% {
+      transform: translate(-15%, 10%);
+    }
+
+    60% {
+      transform: translate(15%);
+    }
+
+    70% {
+      transform: translateY(15%);
+    }
+
+    80% {
+      transform: translate(3%, 35%);
+    }
+
+    90% {
+      transform: translate(-10%, 10%);
+    }
+  }
+
+  @keyframes atom {
+    0% {
+      transform: rotate(180deg);
+    }
+  }
+
+  @keyframes division {
+    0% {
+      transform: rotate(180deg);
+    }
+  }
+
+  @keyframes ball {
+    0% {
+      left: calc(1 / 2 * 100%);
+      top: calc(1 / 2 * 100%);
+    }
+    15% {
+      left: 10%;
+      top: -35%;
+    }
+    25% {
+      left: 45%;
+      top: -50%;
+    }
+    40% {
+      left: 80%;
+      top: -20%;
+    }
+    50% {
+      left: 98%;
+      top: 18%;
+    }
+    60% {
+      left: 80%;
+      top: 50%;
+    }
+    75% {
+      left: 45%;
+      top: 80%;
+    }
+    80% {
+      left: 0%;
+      top: 60%;
+    }
+    85% {
+      left: calc(1 / 2 * 100%);
+      top: calc(1 / 2 * 100%);
+    }
+  }
+
+  @keyframes skeleton-glow {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}
