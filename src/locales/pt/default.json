@@ -1,0 +1,112 @@
+{
+  "header": {
+    "language": {
+      "options": {
+        "en": {
+          "value": "en",
+          "label": "Inglês"
+        },
+        "pt": {
+          "value": "pt",
+          "label": "Português"
+        }
+      },
+      "title": "Mudar idioma"
+    },
+    "theme": {
+      "label": "Mudar tema",
+      "light": "Claro",
+      "dark": "Escuro"
+    }
+  },
+  "intro": {
+    "myself": {
+      "label": "Alô, Sou o",
+      "name": "Michel Domingos"
+    },
+    "callme": {
+      "label": "Mas pode me chamar de",
+      "name": "Micodes"
+    },
+    "navigation": [
+      {
+        "href": "/work",
+        "children": "→ Ver projetos"
+      },
+      {
+        "href": "/about",
+        "children": "→ Mais sobre mim"
+      }
+    ],
+    "typewriter": ["Engenheiro de Software", "Especialista React", "Especialista Frontend"]
+  },
+  "menu": {
+    "navigation": [
+      {
+        "href": "/",
+        "children": "Início",
+        "wave": "HM"
+      },
+      {
+        "href": "/work",
+        "children": "Projetos",
+        "wave": "WK"
+      },
+      {
+        "href": "/about",
+        "children": "Sobre",
+        "wave": "AB"
+      },
+      {
+        "href": "/contact",
+        "children": "Contato",
+        "wave": "CT"
+      }
+    ],
+    "social": [
+      {
+        "href": "/",
+        "children": "↗ linkedin"
+      },
+      {
+        "href": "/",
+        "children": "↗ github"
+      }
+    ]
+  },
+  "common": {
+    "navbar": {
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+
+    "kbar": {
+      "start": {
+        "mobile": "Toque para começar →",
+        "desktop": "Pressione <kbd>{{cmd}}</kbd> <kbd>{{key}}</kbd> para começar →"
+      },
+
+      "actions": {
+        "copy": "Copiar Link",
+        "email": "Enviar Email",
+        "source": "Ver Código Fonte",
+        "home": "Início",
+        "about": "Sobre",
+        "projects": "Projetos"
+      },
+
+      "sections": {
+        "general": "Geral",
+        "goto": "Ir Para",
+        "follow": "Seguir"
+      },
+      "toast": {
+        "title": "Copiado :D",
+        "description": "Agora você pode compartilhar com seus amigos."
+      }
+    }
+  },
+  "main": {},
+  "footer": {}
+}
