@@ -10,7 +10,7 @@ import { Providers } from './providers';
 
 import '@/styles/globals.css';
 import { Cursor } from '@/components/common';
-import { TransitionProvider } from '@/providers/TransitionProvider';
+import { Header, Menu } from '@/modules/components';
 
 export const metadata: Metadata = {
   title: 'Micodes',
@@ -40,7 +40,13 @@ export default async function Root({ children, params }: RootProps) {
           <Providers namespaces={i18nNamespaces} locale={locale} resources={resources}>
             <Noise />
             <Cursor />
-            <TransitionProvider>{children}</TransitionProvider>
+            <section className="relative z-1 min-h-screen w-full overflow-hidden">
+              <Header />
+              <div className="animate-item">
+                <Menu />
+              </div>
+              <div className="animate-item">{children}</div>
+            </section>
           </Providers>
         </main>
       </body>

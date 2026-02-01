@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { PropsWithChildren, useContext, useEffect, useRef } from 'react';
 
 // FrozenRoute keeps the previous route content frozen while it animates out
-function FrozenRoute({ children }: PropsWithChildren) {
+function FrozenRoute({ children }: Readonly<PropsWithChildren>) {
   const context = useContext(LayoutRouterContext);
   const frozen = useRef(context).current;
 
@@ -17,7 +17,7 @@ function FrozenRoute({ children }: PropsWithChildren) {
   return <LayoutRouterContext.Provider value={frozen}>{children}</LayoutRouterContext.Provider>;
 }
 
-function TransitionWrapper({ children }: PropsWithChildren) {
+function TransitionWrapper({ children }: Readonly<PropsWithChildren>) {
   const [scope, animate] = useAnimate();
   const [isPresent, safeToRemove] = usePresence();
 
@@ -58,7 +58,7 @@ function TransitionWrapper({ children }: PropsWithChildren) {
   );
 }
 
-export function TransitionProvider({ children }: PropsWithChildren) {
+export function TransitionProvider({ children }: Readonly<PropsWithChildren>) {
   const pathname = usePathname();
 
   return (

@@ -8,7 +8,7 @@ import { useState, type ReactNode } from 'react';
 import { I18nextProvider } from 'react-i18next';
 
 import { Canvas } from '@/components/common';
-import { KBarProvider } from '@/providers';
+import { KBarProvider, TransitionProvider } from '@/providers';
 
 import initTranslations from '../i18n';
 
@@ -36,7 +36,9 @@ export const Providers = ({ children, locale, namespaces, resources }: Providers
           forcedTheme={undefined}
         >
           <TooltipProvider>
-            <KBarProvider>{children}</KBarProvider>
+            <KBarProvider>
+              <TransitionProvider>{children}</TransitionProvider>
+            </KBarProvider>
           </TooltipProvider>
           <Canvas />
         </ThemeProvider>
