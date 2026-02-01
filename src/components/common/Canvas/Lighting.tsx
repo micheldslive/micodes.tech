@@ -6,11 +6,11 @@ import * as THREE from 'three';
 
 import { LIGHT_COLOR } from '@/utils/constants';
 
-type SceneLightingProps = {
+type LightingProps = {
   mainColor: string;
 };
 
-export const SceneLighting = ({ mainColor }: SceneLightingProps) => {
+export const Lighting = ({ mainColor }: LightingProps) => {
   const lightsData = useMemo(() => {
     const lights: {
       position: readonly [number, number, number];
