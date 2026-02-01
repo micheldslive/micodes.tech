@@ -38,6 +38,6 @@ export type TargetInitials = keyof typeof COMBINATIONS;
 
 export type TargetProps = [number, number, number];
 
-export type CommandPalleteProps = {
+export type CommandButtonProps = {
   type?: ReturnType<typeof getDeviceType>;
 };

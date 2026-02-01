@@ -4,12 +4,12 @@ import parse from 'html-react-parser';
 import { useKBar } from 'kbar';
 import { useTranslation } from 'react-i18next';
 
-import { CommandPalleteProps } from '@/types';
+import { CommandButtonProps } from '@/types';
 import { getDeviceType } from '@/utils/functions';
 
-import { Button } from '../Button';
+import { Button as ButtonUI } from '../Button';
 
-export const CommandPalette = ({ type }: CommandPalleteProps) => {
+export const Button = ({ type }: CommandButtonProps) => {
   const { query } = useKBar();
   const { t } = useTranslation();
   const translation = {
@@ -31,8 +31,13 @@ export const CommandPalette = ({ type }: CommandPalleteProps) => {
   const deviceType = type || getDeviceType();
 
   return (
-    <Button variant="transparent" onClick={query.toggle} aria-label="cmd-palette">
+    <ButtonUI
+      variant="transparent"
+      onClick={query.toggle}
+      aria-label="cmd-button"
+      className="flex gap-1"
+    >
       {translation[deviceType]}
-    </Button>
+    </ButtonUI>
   );
 };

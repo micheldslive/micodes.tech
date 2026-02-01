@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 
 import { Wave } from '@/components/common';
 import { SlideFadeIn } from '@/components/transitions';
-import { Typography, CommandPalette } from '@/components/ui';
+import { Command, Typography } from '@/components/ui';
 import { useMenuStore } from '@/stores';
 
 import { Navigation } from './Navigation';
@@ -37,7 +37,7 @@ export const Intro = () => {
                 }}
               />
             </Typography>
-            <CommandPalette />
+            <Command.Button />
           </div>
           <Navigation />
         </div>

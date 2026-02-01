@@ -11,10 +11,10 @@ import { type LottieComponentProps, type LottieRefCurrentProps } from 'lottie-re
 import { useRouter } from 'next/navigation';
 import { type PropsWithChildren, type ReactElement, useRef, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { RiGithubLine, RiInstagramLine, RiLinkedinLine } from 'react-icons/ri';
+import { RiGithubLine, RiLinkedinLine } from 'react-icons/ri';
 
 import { Lottie } from '@/components/common';
-import { RenderResults } from '@/components/ui';
+import { Command } from '@/components/ui';
 
 type ActionType = {
   id: string;
@@ -55,6 +55,15 @@ export const KBarProvider = ({ children }: PropsWithChildren) => {
       icon: <Lottie lottieRef={homeRef} style={iconStyle} iconName="home" />,
     },
     {
+      id: 'work',
+      name: t('common.kbar.actions.work'),
+      shortcut: ['g', 'w'],
+      keywords: 'go-work',
+      section: t('common.kbar.sections.goto'),
+      perform: () => router?.push('/work'),
+      icon: <Lottie lottieRef={projectsRef} style={iconStyle} iconName="work" />,
+    },
+    {
       id: 'about',
       name: t('common.kbar.actions.about'),
       shortcut: ['g', 'a'],
@@ -62,15 +71,6 @@ export const KBarProvider = ({ children }: PropsWithChildren) => {
       section: t('common.kbar.sections.goto'),
       perform: () => router?.push('/about'),
       icon: <Lottie lottieRef={aboutRef} style={iconStyle} iconName="about" />,
-    },
-    {
-      id: 'projects',
-      name: t('common.kbar.actions.projects'),
-      shortcut: ['g', 'p'],
-      keywords: 'go-projects',
-      section: t('common.kbar.sections.goto'),
-      perform: () => router?.push('/projects'),
-      icon: <Lottie lottieRef={projectsRef} style={iconStyle} iconName="projects" />,
     },
     {
       id: 'copy',
@@ -97,7 +97,7 @@ export const KBarProvider = ({ children }: PropsWithChildren) => {
       keywords: 'view-source',
       section: t('common.kbar.sections.general'),
       perform: () =>
-        window.open('https://github.com/micheldslive/micode.dev', '_blank', 'noopener,noreferrer'),
+        window.open('https://github.com/micheldslive/micodes.dev', '_blank', 'noopener,noreferrer'),
       icon: <Lottie lottieRef={sourceRef} style={iconStyle} iconName="source" />,
     },
     {
@@ -120,16 +120,6 @@ export const KBarProvider = ({ children }: PropsWithChildren) => {
         window.open('https://linkedin.com/in/micheldslive', '_blank', 'noopener,noreferrer'),
       icon: <RiLinkedinLine />,
     },
-    {
-      id: 'instagram',
-      name: 'Instagram',
-      shortcut: ['f', 'i'],
-      keywords: 'go-instagram',
-      section: t('common.kbar.sections.follow'),
-      perform: () =>
-        window.open('https://www.instagram.com/micheldslive', '_blank', 'noopener,noreferrer'),
-      icon: <RiInstagramLine />,
-    },
   ];
 
   return (
@@ -141,7 +131,7 @@ export const KBarProvider = ({ children }: PropsWithChildren) => {
               className="m-0 box-border w-full border-none bg-slate-50 px-4 py-3 text-base text-slate-800 outline-none dark:bg-slate-800 dark:text-slate-50"
               placeholder="Type a command or search…"
             />
-            <RenderResults />
+            <Command />
           </KBarAnimator>
         </KBarPositioner>
       </KBarPortal>

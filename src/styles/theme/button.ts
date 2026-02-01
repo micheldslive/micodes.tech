@@ -19,7 +19,7 @@ export const buttonVariants = cva(
           'hover:bg-neutral-100 hover:text-neutral-900 dark:hover:bg-neutral-900 dark:hover:text-neutral-50',
         link: 'text-neutral-900 underline-offset-4 hover:underline dark:text-neutral-50',
         transparent:
-          'hover:bg-neutral-750 text-neutral-500 hover:text-neutral-200 dark:text-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-neutral-200',
+          'text-neutral-500 hover:bg-neutral-800/5 dark:text-neutral-100 dark:hover:bg-neutral-800',
         none: '',
       },
       size: {
