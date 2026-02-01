@@ -5,12 +5,12 @@ import { ComponentProps } from 'react';
 
 import { Typography } from '@/components/ui';
 import { useWave } from '@/hooks';
-import { WaveStoreProps } from '@/stores';
+import { WaveState } from '@/stores';
 
 type WaveProps = {
   name?: string;
-} & Pick<ComponentProps<'option'>, 'label'> &
-  Pick<WaveStoreProps, 'wave'>;
+  wave: WaveState['current'];
+} & Pick<ComponentProps<'option'>, 'label'>;
 
 export function Wave({ label, name, wave }: WaveProps) {
   const { backgroundPositionX, startWave, stopWave } = useWave();

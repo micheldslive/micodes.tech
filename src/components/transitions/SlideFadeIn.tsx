@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { ComponentProps } from 'react';
 
-import { easeTypes, EaseTypes } from '@/utils/constants';
+import { EASE_TYPES, EaseType } from '@/utils/constants';
 
 export type SlideFadeInDirection = 'up' | 'right' | 'down' | 'left';
 
@@ -11,7 +11,7 @@ export type SlideFadeInAnimationProps = {
   show?: boolean;
   slide?: number;
   slideTo?: number;
-  easeType?: EaseTypes;
+  easeType?: EaseType;
   direction?: SlideFadeInDirection;
   delay?: number;
   opacityFrom?: number;
@@ -42,14 +42,14 @@ export const SlideFadeIn = (props: SlideFadeInProps) => {
 
   const enterTransition = {
     opacity: { delay, duration: opacityDuration },
-    x: { delay, duration: xDuration, ease: easeTypes[easeType] },
-    y: { delay, duration: yDuration, ease: easeTypes[easeType] },
+    x: { delay, duration: xDuration, ease: EASE_TYPES[easeType] },
+    y: { delay, duration: yDuration, ease: EASE_TYPES[easeType] },
   };
 
   const exitTransition = {
     opacity: { delay: 0, duration: opacityDuration },
-    x: { delay: 0, duration: xDuration, ease: easeTypes[easeType] },
-    y: { delay: 0, duration: yDuration, ease: easeTypes[easeType] },
+    x: { delay: 0, duration: xDuration, ease: EASE_TYPES[easeType] },
+    y: { delay: 0, duration: yDuration, ease: EASE_TYPES[easeType] },
   };
 
   const animations = {

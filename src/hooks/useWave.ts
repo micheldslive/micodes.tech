@@ -1,16 +1,16 @@
-'use client'
+'use client';
 
 import { animate, useMotionValue } from 'framer-motion';
 import { useRef } from 'react';
 
-import { useMicodes, WaveStoreProps } from '@/stores';
+import { useWaveStore, WaveState } from '@/stores';
 
 export const useWave = () => {
-  const { setWave } = useMicodes();
+  const { setWave } = useWaveStore();
   const animationRef = useRef<ReturnType<typeof animate> | null>(null);
   const backgroundPositionX = useMotionValue(0);
 
-  const startWave = (wave: WaveStoreProps['wave']) => {
+  const startWave = (wave: WaveState['current']) => {
     if (animationRef.current) return;
 
     animationRef.current = animate(backgroundPositionX, backgroundPositionX.get() + 2000, {
@@ -22,7 +22,7 @@ export const useWave = () => {
     setWave(wave);
   };
 
-  const startBullets = (wave: WaveStoreProps['wave']) => setWave(wave);
+  const startBullets = (wave: WaveState['current']) => setWave(wave);
   const stopBullets = () => setWave('none');
 
   const stopWave = () => {

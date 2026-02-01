@@ -4,12 +4,12 @@ import { ComponentProps } from 'react';
 
 import { For } from '@/components/utils';
 import { cn } from '@/lib/utils';
-import { hamburgerDots } from '@/utils/constants';
+import { HAMBURGER_DOTS } from '@/utils/constants';
 
 type DotsProps = ComponentProps<'div'>;
 
 export const Dots = ({ className, ...props }: DotsProps) => (
-  <For each={hamburgerDots}>
+  <For each={HAMBURGER_DOTS}>
     {(dot, index) => (
       <div
         key={index}

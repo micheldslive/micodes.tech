@@ -2,7 +2,7 @@
 
 import { cubicBezier } from 'framer-motion';
 
-export const easeTypes = {
+export const EASE_TYPES = {
   easeOut: [0, 0, 0.58, 1],
   'slow-down': cubicBezier(0, 0, 0, 1),
   smooth: cubicBezier(0.5, 0, 0, 1),
@@ -12,4 +12,4 @@ export const easeTypes = {
   tilt: [0.03, 0.98, 0.52, 0.99],
 } as const;
 
-export type EaseTypes = keyof typeof easeTypes;
+export type EaseType = keyof typeof EASE_TYPES;

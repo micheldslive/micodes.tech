@@ -6,7 +6,7 @@ import { Link, Typography } from '@/components/ui';
 import { For } from '@/components/utils';
 import { useWave } from '@/hooks';
 import { cn } from '@/lib/utils';
-import { useMicodes } from '@/stores';
+import { useMenuStore } from '@/stores';
 import { NavigationProps, TargetInitials } from '@/types';
 
 type MenuNavegationProps = {
@@ -16,7 +16,7 @@ type MenuNavegationProps = {
 export const Navigation = () => {
   const { t } = useTranslation();
   const { startBullets, stopBullets } = useWave();
-  const { onClose } = useMicodes();
+  const { close } = useMenuStore();
   const navigation = t('menu.navigation', { returnObjects: true }) as MenuNavegationProps[];
   return (
     <ol className="flex flex-col gap-4 [counter-reset:counter]">
@@ -36,7 +36,7 @@ export const Navigation = () => {
           >
             <Link
               className="block duration-400 before:mr-2 before:font-[studiofeixen-writer,studiofeixen,Arial,Helvetica,sans-serif] before:text-[1rem] before:-tracking-widest before:content-['0'_counter(counter)] hover:[font-variation-settings:'wght'_800,'wdth'_100]"
-              onClick={onClose}
+              onClick={close}
               {...props}
             />
           </Typography>

@@ -5,14 +5,14 @@ import { useTranslation } from 'react-i18next';
 
 import { SlideFadeIn } from '@/components/transitions';
 import { For } from '@/components/utils';
-import { useMicodes } from '@/stores';
+import { useMenuStore } from '@/stores';
 import { WorkItemProps } from '@/types';
 
 import { WorkItem } from './WorkItem';
 
 export const Work = () => {
   const [isHovered, setIsHovered] = useState('');
-  const { isOpen } = useMicodes();
+  const { isOpen } = useMenuStore();
   const { t } = useTranslation();
 
   const items = t('work.items', { returnObjects: true }) as WorkItemProps[];

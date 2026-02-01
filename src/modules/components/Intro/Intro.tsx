@@ -6,13 +6,13 @@ import Typewriter from 'typewriter-effect';
 import { Wave } from '@/components/common';
 import { SlideFadeIn } from '@/components/transitions';
 import { Typography, CommandPalette } from '@/components/ui';
-import { useMicodes } from '@/stores';
+import { useMenuStore } from '@/stores';
 
 import { Navigation } from './Navigation';
 
 export const Intro = () => {
   const { t } = useTranslation();
-  const { isOpen } = useMicodes();
+  const { isOpen } = useMenuStore();
   return (
     <SlideFadeIn delay={1} className="relative flex flex-col" show={!isOpen}>
       <div className="relative flex min-h-screen flex-col justify-center max-md:text-2xl">

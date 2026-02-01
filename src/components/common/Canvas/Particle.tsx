@@ -7,7 +7,7 @@ import { useFrame } from '@react-three/fiber';
 import { useRef } from 'react';
 import * as THREE from 'three';
 
-import { useMicodes } from '@/stores';
+import { useWaveStore } from '@/stores';
 
 import { ParticleProps } from './types';
 
@@ -20,7 +20,7 @@ export const Particle = ({
   timeOffset,
   color,
 }: ParticleProps) => {
-  const { wave } = useMicodes();
+  const { current: wave } = useWaveStore();
   const meshRef = useRef<THREE.Mesh | null>(null);
 
   const currentPos = useRef(new THREE.Vector3(...initialPosition));
