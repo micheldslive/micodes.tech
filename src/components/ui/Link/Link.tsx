@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 
 type AnchorProps = LinkProps & Pick<ComponentProps<'a'>, 'className' | 'children'>;
 
-export const BaseLink = ({ className, children, ...props }: AnchorProps) => (
+const Base = ({ className, children, ...props }: AnchorProps) => (
   <NextLink
     className={cn('cursor-hover inline-block text-inherit no-underline', className)}
     {...props}
@@ -15,7 +15,7 @@ export const BaseLink = ({ className, children, ...props }: AnchorProps) => (
   </NextLink>
 );
 
-export const Underline = ({ className, children, ...props }: AnchorProps) => (
+const Underline = ({ className, children, ...props }: AnchorProps) => (
   <NextLink
     className={cn('group/Link cursor-hover relative block w-fit overflow-hidden pb-2', className)}
     {...props}
@@ -25,6 +25,6 @@ export const Underline = ({ className, children, ...props }: AnchorProps) => (
   </NextLink>
 );
 
-export const Link = Object.assign(BaseLink, {
+export const Link = Object.assign(Base, {
   Underline,
 });

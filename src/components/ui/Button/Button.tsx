@@ -22,7 +22,7 @@ export const Icon = ({ label, children, className, ...props }: ButtonIconProps) 
   <Tooltip.Root>
     <Tooltip.Trigger asChild>
       {children && (
-        <Button
+        <Base
           variant="transparent"
           size="icon"
           className={cn('cursor-hover', className)}
@@ -30,7 +30,7 @@ export const Icon = ({ label, children, className, ...props }: ButtonIconProps) 
         >
           {children}
           <span className="sr-only">{label}</span>
-        </Button>
+        </Base>
       )}
     </Tooltip.Trigger>
     {label && (
