@@ -1,5 +1,4 @@
 export * from './Button';
-export * from './Clicker';
 export * from './Command';
 export * from './Dropdown';
 export * from './Hamburger';
@@ -8,6 +7,6 @@ export * from './Link';
 export * from './Logo';
 export * from './Noise';
 export * from './Skeleton';
-export * from './Switcher';
+export * from './Select';
 export * from './Tooltip';
 export * from './Typography';

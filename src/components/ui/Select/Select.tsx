@@ -6,19 +6,19 @@ import { Button } from '../Button';
 import { Dropdown } from '../Dropdown';
 import { Tooltip } from '../Tooltip';
 
-export type SwitcherOption = {
+export type SelectOption = {
   value: string;
   label: string;
   icon?: React.ReactNode;
 };
 
-export type SwitcherProps = Omit<ComponentProps<'input'>, 'ref' | 'onChange'> & {
-  options: SwitcherOption[];
+export type SelectProps = Omit<ComponentProps<'input'>, 'ref' | 'onChange'> & {
+  options: SelectOption[];
   handleChange(value: string): void;
   label?: string;
 };
 
-export const Switcher = ({ label, options, handleChange, value }: SwitcherProps) => {
+export const Select = ({ label, options, handleChange, value }: SelectProps) => {
   const option = options.find((option) => option.value === value);
   const trigger = option?.icon ?? option?.label;
   return (

@@ -9,9 +9,9 @@ import { COMBINATIONS, PARTICLE_COUNT_GOAL } from '@/utils/constants';
 import { padToLength, scalePositions } from '@/utils/functions';
 
 import { Particle } from './Particle';
-import { HoverStateProps } from './types';
+import { ParticleColorProps } from './types';
 
-export const Particles = ({ color }: HoverStateProps) => {
+export const Particles = ({ color }: ParticleColorProps) => {
   const { particles, targets } = useMemo(() => {
     const processedTargets = Object.entries(COMBINATIONS).reduce<
       Record<TargetInitials, TargetProps[]>
@@ -45,7 +45,6 @@ export const Particles = ({ color }: HoverStateProps) => {
       {(particle, index) => (
         <Particle
           key={index}
-          index={index}
           targets={Object.entries(targets).reduce<Record<TargetInitials, TargetProps>>(
             (acc, [key, targetArray]) => {
               acc[key as TargetInitials] = targetArray[index];
