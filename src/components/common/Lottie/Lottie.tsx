@@ -3,13 +3,13 @@
 import LottieRender, { LottieComponentProps } from 'lottie-react';
 import { useEffect, useState } from 'react';
 
+import { cn } from '@/lib/utils';
+import { IconNameProps } from '@/types';
 import { loadLottie } from '@/utils/functions';
 
-type LottieProps = Pick<LottieComponentProps, 'lottieRef' | 'style'> & {
-  iconName?: string;
-};
+type LottieProps = Pick<LottieComponentProps, 'lottieRef' | 'style' | 'className'> & IconNameProps;
 
-export const Lottie = ({ iconName, lottieRef, style }: LottieProps) => {
+export const Lottie = ({ iconName, lottieRef, style, className }: LottieProps) => {
   const [animationData, setAnimationData] = useState<unknown>(null);
 
   useEffect(() => {
@@ -30,7 +30,10 @@ export const Lottie = ({ iconName, lottieRef, style }: LottieProps) => {
       lottieRef={lottieRef}
       style={style ?? { width: 24, height: 24 }}
       animationData={animationData}
-      className="filter-[invert(1)] dark:filter-none"
+      className={cn(
+        'fill-slate-900 filter-none [&_*[stroke]]:stroke-slate-900 [&_*[stroke]]:dark:stroke-slate-50 [&_path]:fill-slate-900 [&_path]:dark:fill-slate-50',
+        className,
+      )}
       loop={false}
       autoplay={false}
     />

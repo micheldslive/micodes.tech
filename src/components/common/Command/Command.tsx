@@ -1,9 +1,10 @@
 'use client';
 
-import { Clicker } from '@/components/ui';
-import { RiCommandFill } from 'react-icons/ri';
 import { useKBar } from 'kbar';
 import { useTranslation } from 'react-i18next';
+import { RiCommandFill } from 'react-icons/ri';
+
+import { Clicker } from '@/components/ui';
 
 export const Command = () => {
   const { query } = useKBar();

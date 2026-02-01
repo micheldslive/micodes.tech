@@ -2,6 +2,7 @@ export * from './Button';
 export * from './Clicker';
 export * from './Command';
 export * from './Dropdown';
+export * from './Hamburger';
 export * from './Image';
 export * from './Link';
 export * from './Logo';
