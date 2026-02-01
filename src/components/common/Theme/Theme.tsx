@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes';
 import { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Switcher } from '@/components/ui';
+import { Select } from '@/components/ui';
 
 const className = 'text-slate-500 dark:text-slate-50';
 
@@ -34,7 +34,7 @@ export const Theme = () => {
   ];
 
   return (
-    <Switcher
+    <Select
       handleChange={setTheme}
       value={theme}
       options={options}
