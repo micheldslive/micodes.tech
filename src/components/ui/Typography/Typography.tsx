@@ -14,13 +14,14 @@ export function Typography<T extends ElementType = 'span'>({
   filling,
   variation,
   weight,
+  color,
   ...props
 }: TypographyProps<T>) {
   const Component = (as || 'span') as 'span';
 
   return (
     <Component
-      className={cn(typographyVariants({ filling, variation, weight }), className)}
+      className={cn(typographyVariants({ filling, variation, weight, color }), className)}
       {...props}
     />
   );

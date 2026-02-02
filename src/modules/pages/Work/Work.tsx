@@ -1,3 +1,3 @@
-import { Work } from '@/modules/components';
+import { WorkContent } from './components';
 
-export const WorkPage = () => <Work />;
+export const WorkPage = () => <WorkContent />;

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { PropsWithChildren } from 'react';
 
+import { Cursor, Header, Menu } from '@/components/common';
 import { Noise } from '@/components/ui';
 import { i18nConfig } from '@/i18nConfig';
 
@@ -9,8 +10,6 @@ import initTranslations from '../i18n';
 import { Providers } from './providers';
 
 import '@/styles/globals.css';
-import { Cursor } from '@/components/common';
-import { Header, Menu } from '@/modules/components';
 
 export const metadata: Metadata = {
   title: 'Micodes',

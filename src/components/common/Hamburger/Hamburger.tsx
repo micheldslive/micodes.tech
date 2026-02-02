@@ -13,6 +13,7 @@ export type HamburgerProps = Partial<UseDisclosureReturnProps> &
 export const Hamburger = () => {
   const { t } = useTranslation();
   const { isOpen, toggle } = useMenuStore();
+  const label = isOpen ? t('header.hamburger.close') : t('header.hamburger.open');
 
-  return <HamburgerUI isOpen={isOpen} onToggle={toggle} label={t('header.hamburger.label')} />;
+  return <HamburgerUI isOpen={isOpen} onToggle={toggle} label={label} />;
 };

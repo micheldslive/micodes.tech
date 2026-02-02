@@ -6,10 +6,11 @@
       "dark": "Dark"
     },
     "command": {
-      "label": "Open Command"
+      "label": "Open command"
     },
     "hamburger": {
-      "label": "Open Menu"
+      "open": "Open menu",
+      "close": "Close menu"
     }
   },
   "intro": {
@@ -96,12 +97,7 @@
     }
   },
   "work": {
-    "tagline": "<span>Apps, Challenges and more</span>",
     "title": "Work",
-    "description": "Side works are a way to convert your <strong>thoughts and personality</strong> into code. Here you can see the different <strong>{{total}}</strong> works I've been working on.",
-    "featured": "Featured Works",
-    "all": "All Works",
-
     "items": [
       {
         "title": "Portfolio",
@@ -109,7 +105,7 @@
         "links": {
           "github": "https://github.com/micheldslive/micodes.dev"
         },
-        "icon": "assignment"
+        "image": "/work/jsm.webp"
       },
       {
         "title": "JSM",
@@ -118,9 +114,7 @@
           "github": "https://github.com/micheldslive/jsm-challenge",
           "web": "https://jsm.mi-code.dev/"
         },
-        "icon": "jsm",
-        "width": 28,
-        "height": 28
+        "image": "/work/jsm.webp"
       },
       {
         "title": "Micode UI",
@@ -129,10 +123,7 @@
           "github": "https://github.com/micheldslive/micode-ui",
           "web": "https://ui.mi-code.dev/"
         },
-        "icon": "mui",
-        "width": 41,
-        "height": 41,
-        "margin": "-5px 0 0 -13px"
+        "image": "/work/jsm.webp"
       },
       {
         "title": "Dog and Pony",
@@ -141,10 +132,7 @@
           "github": "https://github.com/micheldslive/dog-and-pony-challenge",
           "web": "https://dog-and-pony.mi-code.dev/"
         },
-        "icon": "dog-and-pony",
-        "width": 51,
-        "height": 51,
-        "margin": "-15px 0 0 -13px"
+        "image": "/work/jsm.webp"
       },
       {
         "title": "Opea",
@@ -153,7 +141,7 @@
           "github": "https://github.com/micheldslive/opea-challenge",
           "web": "https://opea.mi-code.dev/"
         },
-        "icon": "opea"
+        "image": "/work/jsm.webp"
       },
       {
         "title": "Books",
@@ -162,7 +150,7 @@
           "github": "https://github.com/micheldslive/books-challenge",
           "web": "https://books.mi-code.dev/"
         },
-        "icon": "book"
+        "image": "/work/jsm.webp"
       },
       {
         "title": "Weather",
@@ -171,7 +159,7 @@
           "github": "https://github.com/micheldslive/weather-challenge",
           "web": "https://weater.mi-code.dev/"
         },
-        "icon": "weather"
+        "image": "/work/jsm.webp"
       },
       {
         "title": "Movies",
@@ -180,7 +168,7 @@
           "github": "https://github.com/micheldslive/movies-challenge",
           "web": "https://movies.mi-code.dev/"
         },
-        "icon": "movies"
+        "image": "/work/jsm.webp"
       },
       {
         "title": "mi-calendar",
@@ -189,10 +177,7 @@
           "github": "https://github.com/micheldslive/mi-calendar",
           "web": "https://calendar.mi-code.dev/"
         },
-        "icon": "calendar",
-        "width": 41,
-        "height": 41,
-        "margin": "0 0 0 -10px"
+        "image": "/work/jsm.webp"
       },
       {
         "title": "pomodoro-app",
@@ -201,12 +186,8 @@
           "github": "https://github.com/micheldslive/pomodoro-app",
           "web": "https://pomodoro.mi-code.dev/"
         },
-        "icon": "calendar",
-        "width": 31,
-        "height": 31,
-        "margin": "0 0 0 -5px"
+        "image": "/work/jsm.webp"
       }
     ]
-  },
-  "footer": {}
+  }
 }

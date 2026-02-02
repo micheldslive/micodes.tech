@@ -2,6 +2,8 @@ export * from './Canvas';
 export * from './Cursor';
 export * from './Command';
 export * from './Hamburger';
+export * from './Header';
 export * from './Lottie';
+export * from './Menu';
 export * from './Theme';
 export * from './Wave';

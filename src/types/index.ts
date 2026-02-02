@@ -20,12 +20,10 @@ export type IconNameProps = {
 
 export type WorkItemProps = {
   title: string;
+  image: string;
   description?: string;
   links: SocialProps;
-  icon: string;
-  width?: number;
-  height?: number;
-  margin?: string;
+  isNew?: boolean;
 };
 
 export interface WorkProps {

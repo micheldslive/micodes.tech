@@ -18,6 +18,12 @@ export const typographyVariants = cva(
           'font-[studiofeixen-variable,studiofeixen,Arial,Helvetica,sans-serif] [--font-wdth:125]',
       },
 
+      color: {
+        primary: 'text-slate-500 dark:text-slate-300',
+        secondary: 'text-slate-500 dark:text-slate-50',
+        none: '',
+      },
+
       weight: {
         normal: '[--font-wght:500]',
         medium: '[--font-wght:600]',
@@ -30,6 +36,7 @@ export const typographyVariants = cva(
       filling: 'inline',
       variation: 'normal',
       weight: 'extrabold',
+      color: 'none',
     },
   },
 );
