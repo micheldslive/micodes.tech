@@ -19,6 +19,7 @@ export function Wave({ label, name, wave }: WaveProps) {
       as="h3"
       filling="outline"
       variation="normal"
+      weight="extrabold"
       className="text-2xl leading-6 tracking-[0.05rem] md:text-7xl md:leading-12"
     >
       {label}{' '}

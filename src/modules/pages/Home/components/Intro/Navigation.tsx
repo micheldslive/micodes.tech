@@ -19,7 +19,7 @@ export const Navigation = () => {
             filling="inline"
             variation="random"
             weight="normal"
-            className="text-base text-slate-500 dark:text-slate-50"
+            className="text-lg text-slate-500 dark:text-slate-50"
           >
             <Link.Underline {...props} />
           </Typography>

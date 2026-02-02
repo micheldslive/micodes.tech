@@ -8,7 +8,7 @@ export const typographyVariants = cva(
     variants: {
       filling: {
         outline:
-          'text-transparent [-webkit-text-stroke:2px_var(--color-slate-500)] max-lg:[-webkit-text-stroke:1.25px_var(--color-slate-500)] dark:[-webkit-text-stroke:1px_var(--color-slate-300)] max-lg:dark:[-webkit-text-stroke:1.25px_var(--color-slate-300)]',
+          'text-transparent [-webkit-text-stroke:2px_var(--color-slate-500)] max-lg:[-webkit-text-stroke:2px_var(--color-slate-500)] dark:[-webkit-text-stroke:2px_var(--color-slate-300)] max-lg:dark:[-webkit-text-stroke:2px_var(--color-slate-300)]',
         inline: 'text-slate-500 [-webkit-text-stroke:0] dark:text-slate-300',
       },
 

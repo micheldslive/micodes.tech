@@ -25,11 +25,11 @@
     "navigation": [
       {
         "href": "/work",
-        "children": "→ See my projects"
+        "children": "→ see my projects"
       },
       {
         "href": "/about",
-        "children": "→ More about me"
+        "children": "→ more about me"
       }
     ],
     "typewriter": ["Software Engineer", "React Specialist", "Frontend Expert"]

@@ -8,7 +8,7 @@ export const Logotype = () => {
   const { isOpen } = useMenuStore();
   return (
     <div className="flex items-center gap-5 text-slate-400">
-      <Logo className="h-fit max-w-16 fill-slate-500 pt-2.5 md:max-w-16 dark:fill-slate-50" />
+      <Logo className="h-fit max-w-16 fill-slate-500 md:max-w-16 dark:fill-slate-50" />
       <SlideFadeIn delay={1} show={isOpen}>
         <Typography
           as="span"

@@ -20,7 +20,7 @@ export const WorkListItem = ({ work }: WorkListItemProps) => {
       onMouseLeave={() => setActiveImage(undefined)}
       className="group/item"
     >
-      <div className="cursor-hover relative flex w-full cursor-pointer flex-row items-center justify-between border-b-2 border-slate-500 py-6 group-last/item:border-none dark:border-slate-50">
+      <div className="cursor-hover relative flex w-full flex-row items-center justify-between border-b-2 border-slate-500 py-6 group-last/item:border-none dark:border-slate-50">
         <div className="flex w-full items-center overflow-hidden">
           <div className="absolute overflow-hidden">
             <Typography
