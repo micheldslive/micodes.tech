@@ -97,7 +97,7 @@ export const KBarProvider = ({ children }: PropsWithChildren) => {
       keywords: 'view-source',
       section: t('common.kbar.sections.general'),
       perform: () =>
-        window.open('https://github.com/micheldslive/micodes.dev', '_blank', 'noopener,noreferrer'),
+        window.open('https://github.com/micheldslive/micodes.tech', '_blank', 'noopener,noreferrer'),
       icon: <Lottie lottieRef={sourceRef} style={iconStyle} iconName="source" />,
     },
     {
