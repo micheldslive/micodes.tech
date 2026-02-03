@@ -10,13 +10,13 @@
 
 :root {
   --background: var(--color-slate-800);
-  --foreground: var(--color-slate-50);
+  --foreground: var(--color-slate-500);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: var(--color-slate-100);
-    --foreground: var(--color-slate-500);
+    --foreground: var(--color-slate-50);
   }
 }
 

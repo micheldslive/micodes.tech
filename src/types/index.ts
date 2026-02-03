@@ -39,3 +39,17 @@ export type TargetProps = [number, number, number];
 export type CommandButtonProps = {
   type?: ReturnType<typeof getDeviceType>;
 };
+
+export type CareerProps = {
+  title: string;
+  company: string;
+  companyUrl: string;
+  startDate: string;
+  endDate?: string;
+  location: string;
+};
+export type SelectOption = {
+  value: string;
+  label: string;
+  icon?: React.ReactNode;
+};

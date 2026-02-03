@@ -13,27 +13,6 @@
       "close": "Close menu"
     }
   },
-  "intro": {
-    "myself": {
-      "label": "Hey, I’m",
-      "name": "Michel Domingos"
-    },
-    "callme": {
-      "label": "But you can call me",
-      "name": "Micodes"
-    },
-    "navigation": [
-      {
-        "href": "/work",
-        "children": "→ see my projects"
-      },
-      {
-        "href": "/about",
-        "children": "→ more about me"
-      }
-    ],
-    "typewriter": ["Software Engineer", "React Specialist", "Frontend Expert"]
-  },
   "menu": {
     "navigation": [
       {
@@ -59,11 +38,11 @@
     ],
     "social": [
       {
-        "href": "/",
+        "href": "https://linkedin.com/in/micheldslive",
         "children": "↗ linkedin"
       },
       {
-        "href": "/",
+        "href": "https://github.com/micheldslive",
         "children": "↗ github"
       }
     ]
@@ -96,98 +75,196 @@
       }
     }
   },
-  "work": {
-    "title": "Work",
-    "items": [
-      {
-        "title": "Portfolio",
-        "description": "My portfolio (Repository of this site)",
-        "links": {
-          "github": "https://github.com/micheldslive/micodes.tech"
-        },
-        "image": "/work/jsm.webp"
+  "page": {
+    "home": {
+      "me": {
+        "label": "Hey, I’m",
+        "name": "Michel Domingos"
       },
-      {
-        "title": "JSM",
-        "description": "Project carried out for a Front-End challenge using turborepo.",
-        "links": {
-          "github": "https://github.com/micheldslive/jsm-challenge",
-          "web": "https://jsm.mi-code.dev/"
-        },
-        "image": "/work/jsm.webp"
+      "callme": {
+        "label": "But you can call me",
+        "name": "Micodes"
       },
-      {
-        "title": "Micode UI",
-        "description": "React Powered Component UI, accessible by default and built on top of Radix. Micode UI is open source and made to be easy to use.",
-        "links": {
-          "github": "https://github.com/micheldslive/micode-ui",
-          "web": "https://ui.mi-code.dev/"
+      "navigation": [
+        {
+          "href": "/work",
+          "children": "→ see my projects"
         },
-        "image": "/work/jsm.webp"
+        {
+          "href": "/about",
+          "children": "→ more about me"
+        }
+      ],
+      "typewriter": ["Software Engineer", "React Specialist", "Frontend Expert"]
+    },
+    "about": {
+      "title": "About",
+      "me": "<p>Dynamic Senior Software Engineer with 5+ years of experience building scalable web solutions, specializing in React.js, Node.js, and TypeScript.</p> <p>Led architectural refactoring of Vivo’s conversation app (20M+ monthly users), resolving critical issues to ensure reliable, high-performance human support systems.</p> <p>Delivered WhatsApp Business API integrations improving operational efficiency and governance.</p> <p>Passionate about leveraging technology to solve business challenges and collaborate with global teams.</p>",
+      "image": "/images/profile.webp",
+      "badge": {
+        "src": "/images/badge.webp",
+        "label": "Software Engineer • React Specialist • Frontend Expert • "
       },
-      {
-        "title": "Dog and Pony",
-        "description": "Project carried out to create a Jobs registration form, saving them in Localstorage.",
-        "links": {
-          "github": "https://github.com/micheldslive/dog-and-pony-challenge",
-          "web": "https://dog-and-pony.mi-code.dev/"
+      "career": [
+        {
+          "title": "Senior Software Engineer",
+          "company": "Mutant",
+          "companyUrl": "https://mutant.com.br/",
+          "startDate": "2024-08-01",
+          "endDate": "",
+          "location": "Recife, PE (Remote)"
         },
-        "image": "/work/jsm.webp"
+        {
+          "title": "Senior Software Engineer",
+          "company": "Compass UOL",
+          "companyUrl": "https://compass.uol/",
+          "startDate": "2024-01-01",
+          "endDate": "2024-08-01",
+          "location": "Recife, PE (Remote)"
+        },
+        {
+          "title": "Software Engineer",
+          "company": "Compass UOL",
+          "companyUrl": "https://compass.uol/",
+          "startDate": "2023-01-01",
+          "endDate": "2024-01-01",
+          "location": "Recife, PE (Remote)"
+        },
+        {
+          "title": "Software Engineer",
+          "company": "Dot Digital Group",
+          "companyUrl": "https://dotgroup.com.br/",
+          "startDate": "2022-10-01",
+          "endDate": "2023-01-01",
+          "location": "Recife, PE (Remote)"
+        },
+        {
+          "title": "Software Engineer",
+          "company": "Avanti",
+          "companyUrl": "https://penseavanti.com.br/ecommerce/",
+          "startDate": "2022-02-01",
+          "endDate": "2022-10-01",
+          "location": "Recife, PE (Remote)"
+        },
+        {
+          "title": "Software Engineer",
+          "company": "ATIMO LLC",
+          "companyUrl": "https://atimo.us/",
+          "startDate": "2020-02-01",
+          "endDate": "2022-02-01",
+          "location": "Recife, PE (Remote)"
+        },
+        {
+          "title": "Software Engineer / Graphic Designer",
+          "company": "Woxyn Digital (Freelance)",
+          "companyUrl": "https://www.instagram.com/woxyndigital/",
+          "startDate": "2016-02-01",
+          "endDate": "2020-01-01",
+          "location": "Recife, PE (Remote)"
+        }
+      ]
+    },
+    "work": {
+      "title": "Work",
+      "items": [
+        {
+          "title": "Portfolio",
+          "description": "My portfolio (Repository of this site)",
+          "links": {
+            "github": "https://github.com/micheldslive/micodes.tech"
+          },
+          "image": "/work/jsm.webp"
+        },
+        {
+          "title": "JSM",
+          "description": "Project carried out for a Front-End challenge using turborepo.",
+          "links": {
+            "github": "https://github.com/micheldslive/jsm-challenge",
+            "web": "https://jsm.mi-code.dev/"
+          },
+          "image": "/work/jsm.webp"
+        },
+        {
+          "title": "Micode UI",
+          "description": "React Powered Component UI, accessible by default and built on top of Radix. Micode UI is open source and made to be easy to use.",
+          "links": {
+            "github": "https://github.com/micheldslive/micode-ui",
+            "web": "https://ui.mi-code.dev/"
+          },
+          "image": "/work/jsm.webp"
+        },
+        {
+          "title": "Dog and Pony",
+          "description": "Project carried out to create a Jobs registration form, saving them in Localstorage.",
+          "links": {
+            "github": "https://github.com/micheldslive/dog-and-pony-challenge",
+            "web": "https://dog-and-pony.mi-code.dev/"
+          },
+          "image": "/work/jsm.webp"
+        },
+        {
+          "title": "Opea",
+          "description": "Project carried out to create a CRUD using provided API.",
+          "links": {
+            "github": "https://github.com/micheldslive/opea-challenge",
+            "web": "https://opea.mi-code.dev/"
+          },
+          "image": "/work/jsm.webp"
+        },
+        {
+          "title": "Books",
+          "description": "Project carried out to create an authentication environment.",
+          "links": {
+            "github": "https://github.com/micheldslive/books-challenge",
+            "web": "https://books.mi-code.dev/"
+          },
+          "image": "/work/jsm.webp"
+        },
+        {
+          "title": "Weather",
+          "description": "Project carried out to read weather information when choosing a specific city.",
+          "links": {
+            "github": "https://github.com/micheldslive/weather-challenge",
+            "web": "https://weater.mi-code.dev/"
+          },
+          "image": "/work/jsm.webp"
+        },
+        {
+          "title": "Movies",
+          "description": "Project carried out to consume data from the TMDB api and create a store with a list of products.",
+          "links": {
+            "github": "https://github.com/micheldslive/movies-challenge",
+            "web": "https://movies.mi-code.dev/"
+          },
+          "image": "/work/jsm.webp"
+        },
+        {
+          "title": "mi-calendar",
+          "description": "Nextjs case study project + react-scheduler.",
+          "links": {
+            "github": "https://github.com/micheldslive/mi-calendar",
+            "web": "https://calendar.mi-code.dev/"
+          },
+          "image": "/work/jsm.webp"
+        },
+        {
+          "title": "pomodoro-app",
+          "description": "A pomodoro app built using front-end mentor layout",
+          "links": {
+            "github": "https://github.com/micheldslive/pomodoro-app",
+            "web": "https://pomodoro.mi-code.dev/"
+          },
+          "image": "/work/jsm.webp"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "email": {
+        "label": "Email",
+        "value": "micheldslive@gmail.com"
       },
-      {
-        "title": "Opea",
-        "description": "Project carried out to create a CRUD using provided API.",
-        "links": {
-          "github": "https://github.com/micheldslive/opea-challenge",
-          "web": "https://opea.mi-code.dev/"
-        },
-        "image": "/work/jsm.webp"
-      },
-      {
-        "title": "Books",
-        "description": "Project carried out to create an authentication environment.",
-        "links": {
-          "github": "https://github.com/micheldslive/books-challenge",
-          "web": "https://books.mi-code.dev/"
-        },
-        "image": "/work/jsm.webp"
-      },
-      {
-        "title": "Weather",
-        "description": "Project carried out to read weather information when choosing a specific city.",
-        "links": {
-          "github": "https://github.com/micheldslive/weather-challenge",
-          "web": "https://weater.mi-code.dev/"
-        },
-        "image": "/work/jsm.webp"
-      },
-      {
-        "title": "Movies",
-        "description": "Project carried out to consume data from the TMDB api and create a store with a list of products.",
-        "links": {
-          "github": "https://github.com/micheldslive/movies-challenge",
-          "web": "https://movies.mi-code.dev/"
-        },
-        "image": "/work/jsm.webp"
-      },
-      {
-        "title": "mi-calendar",
-        "description": "Nextjs case study project + react-scheduler.",
-        "links": {
-          "github": "https://github.com/micheldslive/mi-calendar",
-          "web": "https://calendar.mi-code.dev/"
-        },
-        "image": "/work/jsm.webp"
-      },
-      {
-        "title": "pomodoro-app",
-        "description": "A pomodoro app built using front-end mentor layout",
-        "links": {
-          "github": "https://github.com/micheldslive/pomodoro-app",
-          "web": "https://pomodoro.mi-code.dev/"
-        },
-        "image": "/work/jsm.webp"
-      }
-    ]
+      "social": "Social Medias"
+    }
   }
 }
