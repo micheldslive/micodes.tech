@@ -13,4 +13,5 @@ export type ParticleProps = {
   floatSpeed: number;
   distortAmount: number;
   timeOffset: number;
+  scaleFactor: number;
 } & ParticleColorProps;

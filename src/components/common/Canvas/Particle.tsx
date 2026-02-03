@@ -18,6 +18,7 @@ export const Particle = ({
   floatSpeed,
   distortAmount,
   timeOffset,
+  scaleFactor,
   color,
 }: ParticleProps) => {
   const { current: wave } = useWaveStore();
@@ -58,7 +59,7 @@ export const Particle = ({
 
       currentPos.current.add(velocity.current);
 
-      if (Math.abs(currentPos.current.x) > 8) velocity.current.x *= -1;
+      if (Math.abs(currentPos.current.x) > 8 * scaleFactor) velocity.current.x *= -1;
       if (Math.abs(currentPos.current.y) > 4.5) velocity.current.y *= -1;
       if (Math.abs(currentPos.current.z) > 3) velocity.current.z *= -1;
     }

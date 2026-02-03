@@ -1,5 +1,6 @@
 'use client';
 
+import { useThree } from '@react-three/fiber';
 import { useMemo } from 'react';
 import * as THREE from 'three';
 
@@ -11,7 +12,17 @@ import { padToLength, scalePositions } from '@/utils/functions';
 import { Particle } from './Particle';
 import { ParticleColorProps } from './types';
 
+const REFERENCE_ASPECT = 16 / 9;
+
 export const Particles = ({ color }: ParticleColorProps) => {
+  const { viewport } = useThree();
+
+  const scaleFactor = useMemo(() => {
+    const currentAspect = viewport.width / viewport.height;
+
+    return Math.max(0.5, Math.min(1, currentAspect / REFERENCE_ASPECT));
+  }, [viewport.width, viewport.height]);
+
   const { particles, targets } = useMemo(() => {
     const processedTargets = Object.entries(COMBINATIONS).reduce<
       Record<TargetInitials, TargetProps[]>
@@ -19,7 +30,8 @@ export const Particles = ({ color }: ParticleColorProps) => {
       (acc, [key, letterArrays]) => {
         const combined = letterArrays.flat();
         const scaled = scalePositions(combined);
-        acc[key as TargetInitials] = padToLength(scaled, PARTICLE_COUNT_GOAL);
+        const responsiveScaled = scaled.map(([x, y, z]) => [x * scaleFactor, y, z] as TargetProps);
+        acc[key as TargetInitials] = padToLength(responsiveScaled, PARTICLE_COUNT_GOAL);
         return acc;
       },
       {} as Record<TargetInitials, TargetProps[]>,
@@ -27,7 +39,7 @@ export const Particles = ({ color }: ParticleColorProps) => {
 
     const particleData = Array.from({ length: PARTICLE_COUNT_GOAL }, () => ({
       position: [
-        THREE.MathUtils.randFloatSpread(16),
+        THREE.MathUtils.randFloatSpread(16 * scaleFactor),
         THREE.MathUtils.randFloatSpread(9),
         THREE.MathUtils.randFloatSpread(5) - 1,
       ] as [number, number, number],
@@ -38,7 +50,7 @@ export const Particles = ({ color }: ParticleColorProps) => {
     }));
 
     return { particles: particleData, targets: processedTargets };
-  }, []);
+  }, [scaleFactor]);
 
   return (
     <For each={particles}>
@@ -57,6 +69,7 @@ export const Particles = ({ color }: ParticleColorProps) => {
           floatSpeed={particle.floatSpeed}
           distortAmount={particle.distortAmount}
           timeOffset={particle.timeOffset}
+          scaleFactor={scaleFactor}
           color={color}
         />
       )}
