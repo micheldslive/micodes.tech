@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">
+  📰 Portfolio 2026
+</h1>
 
-## Getting Started
+<p align="center">  
+  <img alt="Next" src="https://img.shields.io/static/v1?label=stack&message=nextjs&color=success&labelColor=grey">
+  
+  <img alt="2023" src="https://img.shields.io/static/v1?label=portfolio&message=Micodes&color=success&labelColor=grey">
+</p>
 
-First, run the development server:
+## 💻 About
+
+This is my personal portfolio website, showcasing some of my work, skills, and experiences as a Developer.
+
+---
+
+The project can be viewed at https://micodes.tech/.
+
+---
+
+### 🚀 Technologies
+
+The project was developed using the following technologies:
+
+- [NextJS](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.npmjs.com/package/framer-motion)
+- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber)
+- [TanStack Query](https://tanstack.com/query/latest)
+- [Zustand](https://zustand-demo.pmnd.rs/)
+- [Radix UI](https://www.radix-ui.com/)
+- [i18next](https://www.i18next.com/)
+- [Lucide React](https://lucide.dev/)
+- [Prettier](https://prettier.io/)
+- [Eslint](https://eslint.org/)
+- [Husky](https://github.com/typicode/husky)
+- [Kbar](https://github.com/timc1/kbar)
+- [Lottie React](https://lottiereact.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Date-fns](https://date-fns.org/)
+
+---
+
+### ▶️ Running the Project
+
+Follow these steps to run the application on your machine.
+
+1. Clone the application to your local machine:
 
 ```bash
-npm run dev
+git clone https://github.com/micheldslive/micodes.tech.git
+```
+
+2. Go to the project directory:
+
+```bash
+cd micodes.tech
+```
+
+3. Install dependencies:
+
+```bash
+pnpm install
+# or
+yarn install
+# or
+npm install
+```
+
+4. Run the application locally ([http://localhost:3000](http://localhost:3000)):
+
+```bash
+pnpm dev
 # or
 yarn dev
 # or
-pnpm dev
-# or
-bun dev
+npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Developer<br>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/micheldslive">
+        <img src="https://avatars.githubusercontent.com/u/55795597?v=4" width="100" alt="GitHub Profile"/><br>
+        <sub>
+          <b>Michel Domingos</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
-## Learn More
+### 🖊️ License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The project is licensed under the "MIT License" - See the LICENSE page for more details.
