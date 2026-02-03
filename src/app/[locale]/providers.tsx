@@ -7,8 +7,8 @@ import { ThemeProvider } from 'next-themes';
 import { useState, type ReactNode } from 'react';
 import { I18nextProvider } from 'react-i18next';
 
-import { Canvas } from '@/components/common';
-import { KBarProvider, TransitionProvider } from '@/providers';
+import { Canvas, Preloader } from '@/components/common';
+import { KBarProvider, LoaderProvider, TransitionProvider } from '@/providers';
 
 import initTranslations from '../i18n';
 
@@ -35,12 +35,15 @@ export const Providers = ({ children, locale, namespaces, resources }: Providers
           storageKey="theme"
           forcedTheme={undefined}
         >
-          <TooltipProvider>
-            <KBarProvider>
-              <TransitionProvider>{children}</TransitionProvider>
-            </KBarProvider>
-          </TooltipProvider>
-          <Canvas />
+          <LoaderProvider>
+            <TooltipProvider>
+              <KBarProvider>
+                <Preloader />
+                <TransitionProvider>{children}</TransitionProvider>
+              </KBarProvider>
+            </TooltipProvider>
+            <Canvas />
+          </LoaderProvider>
         </ThemeProvider>
       </I18nextProvider>
     </QueryClientProvider>

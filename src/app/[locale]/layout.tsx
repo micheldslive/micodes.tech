@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import NextTopLoader from 'nextjs-toploader';
 import { PropsWithChildren } from 'react';
 
 import { Cursor, Header, Menu } from '@/components/common';
@@ -35,6 +36,7 @@ export default async function Root({ children, params }: RootProps) {
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className="antialiased">
+        <NextTopLoader color="#606887" showSpinner={false} />
         <main className="min-h-screen">
           <Providers namespaces={i18nNamespaces} locale={locale} resources={resources}>
             <Noise />
