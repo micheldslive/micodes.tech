@@ -173,7 +173,7 @@
           "links": {
             "github": "https://github.com/micheldslive/micodes.tech"
           },
-          "image": "/work/jsm.webp"
+          "image": "/work/portfolio.webp"
         },
         {
           "title": "JSM",
@@ -191,7 +191,7 @@
             "github": "https://github.com/micheldslive/micode-ui",
             "web": "https://ui.mi-code.dev/"
           },
-          "image": "/work/jsm.webp"
+          "image": "/work/ui.webp"
         },
         {
           "title": "Dog and Pony",
@@ -200,7 +200,7 @@
             "github": "https://github.com/micheldslive/dog-and-pony-challenge",
             "web": "https://dog-and-pony.mi-code.dev/"
           },
-          "image": "/work/jsm.webp"
+          "image": "/work/d&p.webp"
         },
         {
           "title": "Opea",
@@ -209,7 +209,7 @@
             "github": "https://github.com/micheldslive/opea-challenge",
             "web": "https://opea.mi-code.dev/"
           },
-          "image": "/work/jsm.webp"
+          "image": "/work/opea.webp"
         },
         {
           "title": "Books",
@@ -218,7 +218,7 @@
             "github": "https://github.com/micheldslive/books-challenge",
             "web": "https://books.mi-code.dev/"
           },
-          "image": "/work/jsm.webp"
+          "image": "/work/books.webp"
         },
         {
           "title": "Weather",
@@ -227,7 +227,7 @@
             "github": "https://github.com/micheldslive/weather-challenge",
             "web": "https://weater.mi-code.dev/"
           },
-          "image": "/work/jsm.webp"
+          "image": "/work/weather.webp"
         },
         {
           "title": "Movies",
@@ -236,7 +236,7 @@
             "github": "https://github.com/micheldslive/movies-challenge",
             "web": "https://movies.mi-code.dev/"
           },
-          "image": "/work/jsm.webp"
+          "image": "/work/movies.webp"
         },
         {
           "title": "mi-calendar",
@@ -245,7 +245,7 @@
             "github": "https://github.com/micheldslive/mi-calendar",
             "web": "https://calendar.mi-code.dev/"
           },
-          "image": "/work/jsm.webp"
+          "image": "/work/calendar.webp"
         },
         {
           "title": "pomodoro-app",
@@ -254,7 +254,7 @@
             "github": "https://github.com/micheldslive/pomodoro-app",
             "web": "https://pomodoro.mi-code.dev/"
           },
-          "image": "/work/jsm.webp"
+          "image": "/work/pomodoro.webp"
         }
       ]
     },
