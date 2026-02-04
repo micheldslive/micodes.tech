@@ -16,7 +16,7 @@ export const Content = () => {
   return (
     <div className="relative container mx-auto flex w-full max-w-7xl flex-col px-6 lg:pt-0">
       <Heading>{title}</Heading>
-      <div className="scrollbar-hide flex h-full justify-between overflow-y-auto pt-4 [&::-webkit-scrollbar]:hidden">
+      <div className="flex h-full flex-col justify-between overflow-y-auto pt-4 md:flex-row">
         <Title label={email.label}>
           <Typography
             as="span"

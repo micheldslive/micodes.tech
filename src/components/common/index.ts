@@ -10,3 +10,4 @@ export * from './Wave';
 export * from './Preloader';
 export * from './Heading';
 export * from './Badge';
+export * from './Base';

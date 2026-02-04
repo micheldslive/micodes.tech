@@ -12,13 +12,13 @@ export const Menu = () => {
   return (
     <div
       className={cn(
-        'pointer-events-none fixed flex h-screen w-4/5 flex-col justify-center max-md:text-2xl',
+        'pointer-events-none fixed flex h-screen w-full flex-col justify-center max-md:text-2xl sm:w-4/5',
         isOpen && 'pointer-events-auto',
       )}
     >
       <SlideFadeIn
         delay={1}
-        className="relative pl-[clamp(20vw,30vw,30vw)] text-center"
+        className="relative text-center max-sm:flex max-sm:w-full max-sm:flex-col max-sm:items-center sm:pl-[clamp(20vw,30vw,30vw)]"
         show={isOpen}
       >
         <Navigation />
