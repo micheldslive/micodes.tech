@@ -5,6 +5,7 @@ import { PropsWithChildren } from 'react';
 import { Cursor, Header, Menu } from '@/components/common';
 import { Noise } from '@/components/ui';
 import { i18nConfig } from '@/i18nConfig';
+import { TransitionProvider } from '@/providers';
 
 import initTranslations from '../i18n';
 
@@ -46,7 +47,9 @@ export default async function Root({ children, params }: RootProps) {
               <div className="animate-item">
                 <Menu />
               </div>
-              <div className="animate-item">{children}</div>
+              <TransitionProvider>
+                <div className="animate-item">{children}</div>
+              </TransitionProvider>
             </section>
           </Providers>
         </main>

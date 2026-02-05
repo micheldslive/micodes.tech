@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Heading, Social } from '@/components/common';
 import { Link, Typography } from '@/components/ui';
+import { Wrapper } from '@/modules/components';
 import { SelectOption } from '@/types';
 
 import { Title } from './Title';
@@ -14,9 +15,9 @@ export const Content = () => {
   const email = t('page.contact.email', { returnObjects: true }) as SelectOption;
   const social = t('page.contact.social');
   return (
-    <div className="relative container mx-auto flex w-full max-w-7xl flex-col px-6 lg:pt-0">
+    <Wrapper>
       <Heading>{title}</Heading>
-      <div className="flex h-full flex-col justify-between overflow-y-auto pt-4 md:flex-row">
+      <div className="flex h-full flex-col justify-baseline overflow-y-auto pt-4 md:flex-row md:justify-between">
         <Title label={email.label}>
           <Typography
             as="span"
@@ -36,6 +37,6 @@ export const Content = () => {
           <Social className="flex-col gap-0 p-0" />
         </Title>
       </div>
-    </div>
+    </Wrapper>
   );
 };
