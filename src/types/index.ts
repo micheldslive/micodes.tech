@@ -21,7 +21,6 @@ export type IconNameProps = {
 export type WorkItemProps = {
   title: string;
   image: string;
-  description?: string;
   links: SocialProps;
   isNew?: boolean;
 };

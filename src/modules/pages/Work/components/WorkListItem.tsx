@@ -14,13 +14,20 @@ type WorkListItemProps = {
 
 export const WorkListItem = ({ work }: WorkListItemProps) => {
   const { setActiveImage } = useWorkStore();
+
+  const Component = work.links.web || work.links.github ? 'a' : 'div';
+
   return (
     <div
       onMouseEnter={() => setActiveImage(work.image)}
       onMouseLeave={() => setActiveImage(undefined)}
       className="group/item"
     >
-      <div className="cursor-hover relative flex w-full flex-row items-center justify-between border-b-2 border-slate-500 py-6 group-last/item:border-none dark:border-slate-50">
+      <Component
+        href={work.links?.web ?? work.links.github}
+        target="_blank"
+        className="cursor-hover relative flex w-full flex-row items-center justify-between border-b-2 border-slate-500 py-6 group-last/item:border-none dark:border-slate-50"
+      >
         <div className="flex w-full items-center overflow-hidden">
           <div className="absolute overflow-hidden">
             <Typography
@@ -55,7 +62,7 @@ export const WorkListItem = ({ work }: WorkListItemProps) => {
         <div className="flex w-fit justify-end text-right">
           <WorkItemLinks links={work.links} />
         </div>
-      </div>
+      </Component>
     </div>
   );
 };

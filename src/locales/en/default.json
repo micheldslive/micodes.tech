@@ -168,8 +168,28 @@
       "title": "Work",
       "items": [
         {
+          "title": "Vivo AI Platform",
+          "links": {
+            "web": "https://www.youtube.com/watch?v=4IVfHvR5CXg"
+          },
+          "image": "/work/vivoai.webp"
+        },
+        {
+          "title": "Offers Carousel (My Vivo App)",
+          "links": {
+            "web": "https://www.youtube.com/watch?v=Vt13bbFyyt0"
+          },
+          "image": "/work/carousel.webp"
+        },
+        {
+          "title": "Template HSM (Whatsapp)",
+          "links": {
+            "web": "https://www.youtube.com/watch?v=NgTUdaHm6qQ"
+          },
+          "image": "/work/hsm.webp"
+        },
+        {
           "title": "Portfolio",
-          "description": "My portfolio (Repository of this site)",
           "links": {
             "github": "https://github.com/micheldslive/micodes.tech"
           },
@@ -177,7 +197,6 @@
         },
         {
           "title": "JSM",
-          "description": "Project carried out for a Front-End challenge using turborepo.",
           "links": {
             "github": "https://github.com/micheldslive/jsm-challenge",
             "web": "https://jsm.mi-code.dev/"
@@ -186,7 +205,6 @@
         },
         {
           "title": "Micode UI",
-          "description": "React Powered Component UI, accessible by default and built on top of Radix. Micode UI is open source and made to be easy to use.",
           "links": {
             "github": "https://github.com/micheldslive/micode-ui",
             "web": "https://ui.mi-code.dev/"
@@ -195,7 +213,6 @@
         },
         {
           "title": "Dog and Pony",
-          "description": "Project carried out to create a Jobs registration form, saving them in Localstorage.",
           "links": {
             "github": "https://github.com/micheldslive/dog-and-pony-challenge",
             "web": "https://dog-and-pony.mi-code.dev/"
@@ -204,7 +221,6 @@
         },
         {
           "title": "Opea",
-          "description": "Project carried out to create a CRUD using provided API.",
           "links": {
             "github": "https://github.com/micheldslive/opea-challenge",
             "web": "https://opea.mi-code.dev/"
@@ -213,7 +229,6 @@
         },
         {
           "title": "Books",
-          "description": "Project carried out to create an authentication environment.",
           "links": {
             "github": "https://github.com/micheldslive/books-challenge",
             "web": "https://books.mi-code.dev/"
@@ -222,7 +237,6 @@
         },
         {
           "title": "Weather",
-          "description": "Project carried out to read weather information when choosing a specific city.",
           "links": {
             "github": "https://github.com/micheldslive/weather-challenge",
             "web": "https://weater.mi-code.dev/"
@@ -231,7 +245,6 @@
         },
         {
           "title": "Movies",
-          "description": "Project carried out to consume data from the TMDB api and create a store with a list of products.",
           "links": {
             "github": "https://github.com/micheldslive/movies-challenge",
             "web": "https://movies.mi-code.dev/"
@@ -240,7 +253,6 @@
         },
         {
           "title": "mi-calendar",
-          "description": "Nextjs case study project + react-scheduler.",
           "links": {
             "github": "https://github.com/micheldslive/mi-calendar",
             "web": "https://calendar.mi-code.dev/"
@@ -249,7 +261,6 @@
         },
         {
           "title": "pomodoro-app",
-          "description": "A pomodoro app built using front-end mentor layout",
           "links": {
             "github": "https://github.com/micheldslive/pomodoro-app",
             "web": "https://pomodoro.mi-code.dev/"

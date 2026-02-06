@@ -9,31 +9,21 @@ type WorkItemLinksProps = Pick<WorkItemProps, 'links'>;
 
 export const WorkItemLinks = ({ links }: WorkItemLinksProps) => {
   const github = useLottieAnimation();
-  const web = useLottieAnimation();
+
+  const hasWeb = Boolean(links.web);
 
   return (
-    <div className="flex min-h-[35px] items-center gap-2">
-      {links.github && (
+    <div className="flex min-h-8.75 items-center gap-2">
+      {links.github && hasWeb && (
         <Link.Tooltip
           href={links.github}
           target="_blank"
           onMouseEnter={github.play}
           onMouseLeave={github.stop}
+          onClick={(event) => event.stopPropagation()}
           label="Github"
         >
           <Lottie lottieRef={github.ref} iconName="source" />
-        </Link.Tooltip>
-      )}
-
-      {links.web && (
-        <Link.Tooltip
-          href={links.web}
-          target="_blank"
-          onMouseEnter={web.play}
-          onMouseLeave={web.stop}
-          label="Live"
-        >
-          <Lottie lottieRef={web.ref} iconName="copy-link" />
         </Link.Tooltip>
       )}
     </div>
